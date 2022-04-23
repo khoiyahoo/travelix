@@ -1,0 +1,28 @@
+.offer-container {
+    position: relative;
+}
+.offer {
+    /* background-image: url('/src/images/images-1.jpg');  */
+    color: #fff;
+    font-size: 40px;
+    position:absolute;
+    height:600px;
+    width: 100%;
+    top:-106px;
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    font-weight: 900;
+    /* background-color: #dbdbdb; */
+  }
+.offer-view-more {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.view-more-btn {
+    margin-left: -58px;
+    margin-top: 50px;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 70%);
+}

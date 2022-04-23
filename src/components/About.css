@@ -1,0 +1,118 @@
+.about-title-container {
+    display:flex;
+    justify-content:center;
+}
+.about-title {
+    font-size:50px;
+    text-transform: uppercase;
+    color:var(--violet-color);
+}
+.about-content-container {
+    margin: 50px 50px 0 100px;
+    display:flex;
+}
+.about-content {
+    width: calc(100% /2);
+}
+.about-content-text p {
+    font-size:15px;
+    line-height:2;
+    font-weight:700;
+    color:var(--text-color);
+}
+.about-content-heading {
+    margin: 50px 0 50px 0;
+}
+.about-content-heading h1{
+    color:var(--violet-color);
+}
+.about-intro{
+    margin-top: 100px;
+}
+.about-intro-content div:first-child{
+    display: flex;
+    justify-content: center;
+}
+.about-intro-content div:nth-child(2){
+    display: flex;
+    text-align: center;
+    margin-left:250px;
+    margin-right:100px;
+    max-width: 1000px;
+}
+.about-intro-content div h1{
+    font-size:2em;
+    color:var(--violet-color);
+    margin-bottom:50px;
+}
+.about-intro-content div p{
+    font-size:15px;
+    color:var(--text-color);
+    font-weight:200;
+}
+.about-intro-image {
+    position: relative;
+}
+.about-intro-background {
+    position:absolute;
+    top:50px;
+    left:170px;
+}
+.about-intro-image-des {
+    top:140px;
+    left:270px;
+    position:absolute;
+    z-index: 99;
+}
+.about-intro-image-des h1 {
+    font-size:50px;
+    color:#fff;
+    margin-bottom:30px;
+    text-transform:uppercase;
+}
+.about-intro-image-des h2 {
+    font-size:20px;
+    color:#fff;
+    margin-left: 10px;
+}
+.about-intro-background img{
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 70%);
+}
+.about-intro-btn {
+    position: absolute;
+    top:155px;
+    left:130px;
+}
+.about-intro-sperate {
+    width: 100%;
+    height: 570px;
+}
+.about-intro-sperate img{
+    width: 100%;
+}
+.about-intro-data {
+    display: flex;
+    margin: 500px 250px 100px 350px;
+}
+.col-data {
+    width: calc(100% / 4);
+}
+.col-data-number {
+    font-size: 50px;
+    margin:50px 20px 20px 0;
+}
+.col-data-number-activites{
+    margin-top:70px;
+}
+.col-data-icon {
+margin-left: 15px;
+}
+.col-data-des {
+    margin-top: 50px;
+    font-size:20px;
+
+    color: var(--text-color);
+}
+.col-data-des-satisfied,.col-data-des-activites {
+    margin-left: 20px;
+}

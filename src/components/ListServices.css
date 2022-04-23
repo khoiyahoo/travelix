@@ -1,0 +1,38 @@
+.list-services-container{
+    display: flex;
+    list-style: none;
+    top: -125px;
+    position: relative;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    height: 188px;
+    justify-content:center; 
+ 
+}
+.list-content {
+    background-color: #fff;
+    width: 1210px;
+    height:145px;
+    border-radius:66px;
+    margin-top: 22px;
+}
+
+.list-services-items{
+    display:flex;
+    margin-top:52px;
+    list-style: none;
+    justify-content: space-around;
+}
+.list-item-content {
+    display:flex;
+    align-items: center;
+}
+.list-item-text{
+    margin-left: 10px;
+}
+.list-item-text h1{
+    text-transform: uppercase;
+    color: var(--violet-color);
+}
+.car-icon,.cuises-icon,.flight-icon {
+    margin-top: 10px;
+}
