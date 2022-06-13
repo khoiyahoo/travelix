@@ -6,32 +6,85 @@ import 'aos/dist/aos.css'
 import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import Footer from '../Footer';
-import axios from 'axios';
+import ReactPaginate from 'react-paginate'
+
 function ListOffer() {
     useEffect(()=>{
         Aos.init({duration:500});
-      },[])
-    //rest API
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(10);
+      },[]);
 
-    useEffect(()=>{
-        const fetchPosts = async () =>{
-            setLoading(true);
-            const res = await axios.get('http://localhost:8000/item');
-            setPosts(res.data);
-            setLoading(false);
-        }
+      //pagination
+      const [items, setItems] = useState([]);
+      const [pageCount, setPageCount] = useState(0);
+      let limit = 10;
+      useEffect(()=>{
+          const getTours = async()=>{
+            const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_page=1&_limit=9`);
+            const data = await res.json();
+            const total = res.headers.get('x-total-count');
+            setPageCount(Math.ceil(total / limit));
+            setItems(data);
+          };
+          getTours();
+      },[limit]);
+      const fetchTours = async (currentPage) =>{
+        const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_page=${currentPage}&_limit=9`);
+        const data = await res.json();
+        return data;
+    }
+      const handelPageClick = async(data) =>{
+          console.log(data.selected);
+          let currentPage = data.selected + 1;
+          const toursFormServer = await fetchTours(currentPage);
+          setItems(toursFormServer);
+      }
+      //search
+      const [search, setSearch] = useState('');
+      const searchText = (event) =>{
+        setSearch(event.target.value);
+      }
+      let searchData = items.filter(item => {
+          return Object.keys(item).some(key => item[key]
+          .toString()
+          .toLowerCase()
+          .includes(search.toString().toLowerCase()));})
+      //change view
+      const handleChangeGridView = () => {
+        const btnGridView = document.querySelector('.btn-grid-view');
+        const btnListView = document.querySelector('.btn-list-view');
+        const layoutGridView = document.querySelector('.grid-view');
+        const layoutListView = document.querySelector('.list-view');
+        btnListView.classList.add('active');
+        btnGridView.classList.remove('active');
+        layoutListView.classList.add('layout-active');
+        layoutGridView.classList.remove('layout-active');
 
-        fetchPosts();
-    }, []);
-    console.log(posts);
+      }
+      const handleChangeListView = () =>{
+        const btnGridView = document.querySelector('.btn-grid-view');
+        const btnListView = document.querySelector('.btn-list-view');
+        const layoutGridView = document.querySelector('.grid-view');
+        const layoutListView = document.querySelector('.list-view');
+        btnGridView.classList.add('active');
+        btnListView.classList.remove('active');
+        layoutGridView.classList.add('layout-active');
+        layoutListView.classList.remove('layout-active');
+      }
+      
+      //btn-sort-by
+      const handleClickSortBy = () => {
+          
+          const dropDown = document.querySelector('.btn-sort-by-dropdown');
+          const iconSortDown = document.querySelector('.icon-sort-down');
+          const iconSortUp = document.querySelector('.icon-sort-up');
+          iconSortDown.classList.toggle('hide');
+          iconSortUp.classList.toggle('hide');
+          dropDown.classList.toggle('active');
+      }
   return (
     <div>
       <div className="list-offer-container"> 
-        <div class="list-offer"><h1 >MULTI-COUNTRY TOURS</h1></div>
+        <div className="list-offer"><h1 >MULTI-COUNTRY TOURS</h1></div>
         <div className="search">
           <div className="row">
                 <ul className="search-content">
@@ -95,15 +148,15 @@ function ListOffer() {
       <div className="filter">
           <div className="row">
               <div class="grid__colum-2">
-                  <button className="btn-layout active">
-                    <i class="fas fa-list"></i>
-                     List view
+                  <button className="btn-layout btn-grid-view active"onClick={handleChangeListView}>
+                  <i class="fas fa-th"></i>
+                    Gird view
                   </button>
                 </div>
              <div class="grid__colum-2">
-                  <button className="btn-layout">
-                    <i class="fas fa-th"></i>
-                    Gird view
+                  <button className="btn-layout btn-list-view" onClick={handleChangeGridView}>          
+                    <i class="fas fa-list"></i>
+                     List view
                   </button>
             </div>
             <div className="grid__colum-8">
@@ -119,8 +172,16 @@ function ListOffer() {
                       </div>
                       <span>per page</span>
                   </div>
-                  <div className="btn-sort-by">
-                      <span>sort by <i class="fas fa-caret-down"></i></span>
+                  <div onClick={handleClickSortBy} className="btn-sort-by">
+                      <span>SORT BY <i class="fas fa-caret-down icon-sort-down"></i>
+                      <i class="fas fa-caret-up icon-sort-up hide"></i></span>
+                      <div className="btn-sort-by-dropdown">
+                          <ul className="list-dropdown">
+                              <li className="item-dropdown"><Link to="/" className="item-dropdown-link">A to Z</Link></li>
+                              <li className="item-dropdown"><Link to="/"className="item-dropdown-link">Z to A</Link></li>
+                              <li className="item-dropdown active"><Link to="/"className="item-dropdown-link">Most Popular</Link></li>
+                          </ul>
+                      </div>
                   </div>
               </div>
               </div>
@@ -132,7 +193,9 @@ function ListOffer() {
                             <h1>Search Tours</h1>
                         </div>
                         <div className="search-box-input">
-                            <input name="tour-name"placeholder="Type Tour Name"/>
+                            <input name="tour-name"placeholder="Type Tour Name" 
+                            value={search}
+                            onChange={searchText.bind(this)}/>
                             <span className="search-icon"><i class="fas fa-search"></i></span>
                         </div>
                     </div>
@@ -192,15 +255,61 @@ function ListOffer() {
                     </div>
               </div>
               <div className="grid__colum-10">
-                  <div className="row list-items">
-                      <div className="grid__colum-3">
+                  {/* LIST-VIEW */}
+                  <div className="row list-view ">
+                      {searchData
+                            .map((item,index) => {
+                          return ( <div key={item.id}className="list-view-item-container list-group-item">
+                          <Link to="/detail" className="list-view-heading-link">
+                          <div className="tour-item-img">
+                                <img src={item.url} alt="anh"/>
+                                <button className="tour-item-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                </button>
+                          </div>
+                          <div className="tour-item-title">
+                              <h1>{item.title}</h1>
+                              <h2>{item.title}</h2>
+                          </div>
+                          </Link>
+                          <div className="tour-item-detail">
+                              <ul className="list-content-detail">
+                                  <li className="item-content-detail">
+                                  {item.title}
+                                  </li>
+                                  <li className="item-content-detail">
+                                  {item.title}
+                                  </li>
+                                  <li className="item-content-detail">
+                                  {item.title}
+                                  </li>
+                                  <li className="item-content-detail">
+                                  {item.title}
+                                  </li>
+                                  <li className="item-content-detail">
+                                  {item.title}
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="list-view-btns">
+                             <div className="btn-tour btn-link-detail btn-list-view"><Link to="/" className="btn-link-view">View Tour</Link></div>
+                             <div> <button className="btn-tour btn-book btn-list-view">Book now</button></div>
+                          </div>
+                      </div>)
+                      })}
+                  </div>
+                  {/* GRID-VIEW */}
+                  <div className="row grid-view layout-active">
+                      {items.filter(item => {return Object.keys(item).some(key => item[key].toString().toLowerCase().includes(search.toString().toLowerCase()));})
+                            .map((item, index) => {
+                          return (<div key={item.id} className="grid__colum-3">
                           <div className="item-tour">
                               <div className="item-tour-heading"> 
                               <Link to="/detail">   
                                 <div className="item-tour-img">                              
-                                    <img src="https://www.exotravel.com/cdn-cgi/image/fit=scale-down,width=1700,quality=70,format=auto/https://www.exotravel.com/images/made/chrootassets/content/multiday-tours/images/exo-travel-laos-vietnam-multi-country-trekking---luang-prabang-to-hanoi-main_720_450_75_c1.jpg" alt=""/>                     
+                                    <img src={item.url} alt=""/>                    
                                     <div className="item-tour-title">
-                                        <h3>Trekking Luang Prabang to Hanoi</h3>
+                                        <h3>{item.title}</h3>
                                     </div>
                                     <button className="item-tour-cart">
                                         <i class="fas fa-shopping-cart"></i>
@@ -209,15 +318,15 @@ function ListOffer() {
                                 </Link>       
                               </div> 
                               <div className="item-tour-day">
-                                  <h3>13 days / 12 nights</h3>
+                                  <h3>{item.title}</h3>
                               </div>
                               <div className="item-tour-content">
                                   <ul className="list-content-tour-details">
-                                      <li className="item-content-tour-details">Learn about hill tribe cultures</li>
-                                      <li className="item-content-tour-details">Hike scenic Mai Chau Valley</li>
-                                      <li className="item-content-tour-details">Sleep in local homestays</li>
-                                      <li className="item-content-tour-details">Trek along the Ho Chi Minh Trail</li>
-                                      <li className="item-content-tour-details">Visit Vieng Xay’s historic caves</li>
+                                      <li className="item-content-tour-details">{item.title}</li>
+                                      <li className="item-content-tour-details">{item.title}</li>
+                                      <li className="item-content-tour-details">{item.title}</li>
+                                      <li className="item-content-tour-details">{item.title}</li>
+                                      <li className="item-content-tour-details">{item.title}</li>
                                   </ul>
                               </div>
                               <div className="grid-view-btn">
@@ -225,21 +334,27 @@ function ListOffer() {
                                   <button className="btn-tour btn-book">Book now</button>
                                 </div> 
                           </div>
-                      </div>       
+                      </div>)
+                      })}
                   </div>
-                  <div className="row">
-                      <div className="pagination-container">
-                        <div className="pagination">
-                                <li className="page-item previous-page disable"><a className="page-link"href="#"><i class="fas fa-chevron-left"></i>Previous</a></li>
-                                <li className="page-item current-page active-page"><a className="page-link"href="#">1</a></li>
-                                <li className="page-item dots"><a className="page-link"href="#">...</a></li>
-                                <li className="page-item current-page"><a className="page-link"href="#">5</a></li>
-                                <li className="page-item current-page"><a className="page-link"href="#">6</a></li>
-                                <li className="page-item dots"><a className="page-link"href="#">...</a></li>
-                                <li className="page-item current-page"><a className="page-link"href="#">10</a></li>
-                                <li className="page-item next-page"><a className="page-link"href="#">Next<i class="fas fa-chevron-right"></i></a></li>
-                        </div>
-                        </div>
+                  <div className="row pagination-row">
+                        <ReactPaginate
+                        previousLabel ={'previous'}
+                        nextLabel ={'next'}
+                        breakLabel={'...'}
+                        pageCount ={pageCount}
+                        marginPagesDisplayed={3}
+                        pageRangeDisplayed={3}
+                        onPageChange={handelPageClick}
+                        containerClassName={'pagination'}
+                        pageClassName={'page-item'}
+                        pageLinkClassName={'page-link'}
+                        previousClassName={'previous-page'}
+                        nextClassName={'next-page'}
+                        breakClassName={'page-item'}
+                        breakLinkClassName={'page-link'}
+                        activeClassName={'active-page'}
+                        />
                   </div>
               </div>
           </div>
