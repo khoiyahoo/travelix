@@ -1,0 +1,143 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 8.75rem auto;
+    }
+    z-index: 100;
+}
+.title {
+    h5 {
+        font-weight: 600 !important;
+    }
+    
+}
+.inputSelect {
+    div {
+        font-size: 14px;
+    }
+}
+.labelText {
+    font-size: 14px;
+} 
+
+.starContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    @media only screen and (max-width: 500px) {
+        margin-right: 32px !important;
+     }
+    .inputCounter {
+        width: 100px;
+        margin-right: 16px;
+    }
+    .starWrapper {
+        margin-left: 16px;
+        svg {
+            font-size: 20px;
+        }
+    }
+}
+.titleInput {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0 !important;
+  }
+  .containerUploadImg {
+    display: flex;
+    justify-content: center;
+    max-height: 326px;    
+    .boxUpload {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      background: rgba(28, 28, 28, 0.05);
+      border-radius: 5px;
+      max-height: 326px;
+      max-width: 326px;
+      border: 1px dashed;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      @media only screen and (max-width: 767px) {
+        padding: 15px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        h4 {
+          margin: 0;  
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .selectImgTitle {
+    text-decoration: underline;
+    margin-top:24px;
+    @media only screen and (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+  .imgPreview {
+    position: relative;
+    .iconDelete {
+      width: 20px;
+      height: 20px;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #ccc;
+      position: absolute;
+      top: 30px;
+      right: 24px;
+      color: var(--danger-color);
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .iconDelete:hover {
+      background-color: var(--danger-color);
+      color: #cccc;
+    }
+  }
+  .imgAddPhoto {
+    width: 100px;
+    height:  100px;
+    color: var(--gray-40);
+    @media only screen and (max-width: 767px) {
+      width: 62px;
+      height:  60px;
+    }
+  }
+  .noImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-weight: 600;
+      color: var(--gray-40);
+      font-style: italic;
+    }
+  
+  }
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .action {
+        display: flex;
+        justify-content: flex-end;
+    }
+    p{
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}

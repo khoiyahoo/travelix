@@ -1,0 +1,92 @@
+.root {
+    width: 790px;
+    max-width: 790px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 100%;
+      padding: 24px;
+      overflow: hidden;
+    }
+}
+.form {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .row {
+    margin: 0;
+    flex-wrap:nowrap;
+    @media only screen and (max-width: 768px) {
+      flex-wrap:wrap;
+      flex-direction: column;
+    }
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+.footer{
+    justify-content: flex-end !important;
+}
+///===================
+.titleUpload {
+margin-bottom: 8px;
+font-size: 14px;
+font-weight: 500;
+}
+
+.main {
+width: 100%;
+border: 1px dashed rgba(145, 158, 171, 0.32);
+margin: auto;
+padding: 8px;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+.dropZone {
+
+&:hover {
+  cursor: pointer;
+}
+}
+.rowImg {
+    margin: 0;
+    justify-content: center;
+}
+
+.imageContainer {
+width: 100px; 
+height: 100px;
+padding: 0;
+position: relative;
+img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+}
+}
+.deleteImage {
+position: absolute;
+top: -5px;
+right: 5px;
+cursor: pointer;
+svg {
+  color: var(--danger-color);
+}
+}
+
+.imageContainer:nth-of-type(even) {
+margin: 0 8px;
+}
+}
+
+.listImageContainer {
+margin-bottom: 8px;
+}
+

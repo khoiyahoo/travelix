@@ -1,0 +1,166 @@
+.root {
+    text-transform: none;
+    padding: 12px 24px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0;
+    font-weight: 600;
+    .dotContainer {
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 5px;
+        height: 5px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-right: 2px;
+      }
+    span:first-child {
+      margin-left: 10px;
+    }
+    span:nth-child(2) {
+        opacity: 0.6;
+      }
+    span:nth-child(3) {
+        opacity: 0.4;
+      }
+  }
+}
+  .btnPrimary {
+    background: var(--primary-color) !important;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    &:hover {
+      background-color: #4353a5 !important;
+    }
+    &[class~=disabled] {
+      background: var(--eerie-black-5) !important;
+      color: var(--eerie-black-40) !important;
+      border: 1px solid #cccc; 
+      &:hover {
+        border: 1px solid #cccc; 
+        color: var(--gray-40) !important;
+      }
+      .dotContainer {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 5px;
+          height: 5px;
+          background: var(--eerie-black-40);
+          border-radius: 50%;
+          margin-right: 2px;
+        }
+    }
+    }
+    &[class~=active] {
+      background-color: var(--violet-dark-color) !important;
+     }
+  }
+  .btnSecondary {
+    background: var(--orange-color) !important;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent!important;
+    svg {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    &:hover {
+      background: #ffff !important;
+      border: 1px solid var(--orange-color)!important;
+      color: var(--orange-color) !important;
+    }
+    &[class~=disabled] {
+      background: var(--gray-40) !important;
+      svg {
+        color: var(--eerie-black-40) !important; 
+      }
+      border:  1px solid var(--eerie-black-40) !important; 
+      &:hover {
+        background: var(--gray-40) !important;
+        color: #ffff !important;
+
+      }
+    }
+  }
+  .btnOutlined {
+    background: var(--primary-light-color-3) !important;
+    color: var(--primary-color) !important; 
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent !important;
+    svg {
+      color: var(--primary-color) !important; 
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .dotContainer {
+      span {
+        background: #ffff !important;
+      }
+    }
+    &:hover {
+      background: var(--primary-light-color-3)!important;
+      svg {
+        color: var(--primary-color) !important;
+      }
+      color : var(--primary-color) !important;
+    }
+    &[class~=disabled] {
+      background: var(--eerie-black-5) !important;
+      svg {
+        color: var(--eerie-black-40) !important; 
+      }
+      border:  1px solid var(--eerie-black-40) !important; 
+    }
+    &[class~=active] {
+      background-color: var(--primary-color) !important;
+      color: #ffff !important;
+      svg {
+          color: #ffff !important;
+      }
+     }
+  }
+  
+  .btnLinear {
+    background: linear-gradient(120deg, rgb(250, 158, 27), rgb(141, 79, 255), rgb(250, 158, 27));
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 200%;
+    transition: 0.5s;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 70%);
+    color: #ffff;
+    &:hover {
+      background-position: right !important;
+    }
+    &[class~=Mui-disabled] {
+      background: var(--eerie-black-5);
+      color: var(--eerie-black-40);  
+    }
+  }
+  
+  .btnRaised {
+    background: var(--primary-color) !important;
+    border: 1px solid transparent;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 70%);
+    color: #FFFFFF;
+    &:hover {
+      background: var(--violet-light-color) !important;
+      box-shadow: 2px 3px 4px rgb(0 0 0 / 70%);
+    }
+    &[class~=Mui-disabled] {
+      background: var(--eerie-black-5);
+      color: var(--eerie-black-40);
+    }
+  }

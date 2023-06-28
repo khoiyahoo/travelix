@@ -1,0 +1,130 @@
+
+.root {
+    background: var(--primary-color);
+    padding: 48px 100px;
+    @media only screen and (max-width: 768px) {
+        padding: 16px 0 0 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      @media only screen and (max-width: 600px) {
+        display: block;
+      }
+}
+
+.titleFollow {
+    display: flex;
+    justify-content: center;
+    p {
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-weight:700;
+    }
+    @media only screen and (max-width: 600px) {
+        margin-top: 24px;
+      }
+}
+
+.titleContact {
+    padding-left: 85px;
+    p {
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-weight:700;
+    }
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        padding-left: 0;
+      }
+}
+.contentFollow {
+    margin-top: 7px;
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .itemFollow {
+        padding: 8px 0;
+        cursor: pointer;
+        color: var(--white-color) !important;
+        padding-left: 100px;
+        margin: auto;
+        svg {
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 1024px) {
+            padding-left: 20px;
+          }
+        a {
+            color: var(--white-color) !important;
+        }
+    }
+    .itemFollow a:hover {
+        color: var(--orange-color) !important;
+    }
+}
+
+.infoBodyListContact {
+    padding-top:16px;
+    padding-left: 28px;
+}
+.infoContact {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    div {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 12px;
+        align-items: center;
+        a {
+             color: var(--white-color);      
+        }
+        a:hover {
+            color: var(--orange-color);      
+       }
+    }
+}
+.infoContact svg{
+    font-size:25px;
+    color:var(--orange-color);
+    margin-right:20px;
+}
+
+.contact-link-info{
+    text-decoration: none;
+}
+
+.subFooter {
+    margin-top: 60px;
+    padding: 30px;
+    border: 1px solid var(--orange-color);
+    p {
+        color: var(--white-color);
+    }
+    @media only screen and (max-width: 1024px) {
+        margin-top:0;
+      }
+}
+
+.rootBottom {
+    background-color: #070B33;
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    @media only screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: var(--white-color);
+        font-size:12px;
+        margin-bottom:0;
+    }
+}

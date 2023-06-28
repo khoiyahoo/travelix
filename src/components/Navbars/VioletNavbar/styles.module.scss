@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  .navLogoName {
+    font-size:18px;
+    font-weight:700;
+  }
+  .iconNav {
+    font-size:18px;
+    margin-right:8px;
+  }
+  .navbarWrapper {
+    background-color: var(--primary-color);
+  }
+  
+  .navWrapperMenu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdownItem {
+    position: relative;
+    a {
+      color: var(--primary-color) !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight:500;
+    }
+    @media only screen and (max-width: 991px) {
+      a {
+        color: #ffff !important;
+      }
+    }
+  }
+  .headerTitle {
+    color: var(--orange-color) !important
+  }
+  
+  .collapseMobile::before {
+    @media only screen and (max-width: 991px) {
+      background: var(--linear-second-color) !important;
+    }
+  }

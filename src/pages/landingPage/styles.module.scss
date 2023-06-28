@@ -1,0 +1,61 @@
+.pageHeader {
+  background-image: url("../../assets/img/homehero.jpg");
+  height: 900px !important;
+  @media only screen and (max-width: 768px) {
+    height: 950px !important;
+  }
+}
+.pageHeadBox {
+  min-height: 900px !important;
+  @media only screen and (max-width: 768px) {
+    height: 950px !important;
+  }
+}
+.pageHeadBox::after {
+  height: 900px !important;
+  @media only screen and (max-width: 768px) {
+    height: 950px !important;
+  }
+}
+
+.titleHome {
+  text-transform: uppercase;
+  font-size: 3rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.titleHero {
+  font-size: 7rem;
+  font-family: 'Ms Madi', cursive;
+  font-weight: 600;
+  @media only screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+}
+.subTitle {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  @media only screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+.btnContainerWrapper {
+  display: flex;
+  justify-content: center;
+  .btnExplore {
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 24px !important;
+    @media only screen and (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+

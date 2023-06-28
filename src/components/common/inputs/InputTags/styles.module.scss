@@ -1,0 +1,43 @@
+.root {
+    text-align: left;
+    border: 1px solid #e3e3e3;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    &[class~="has-danger"] {
+      &::after {
+        display: none;
+      }
+      [class~="react-select__control"] {
+        border-color: #ffcfcf;
+      }
+    }
+    & [class~="react-tagsinput"] {
+      padding: 0 16px;
+      width: 100%;
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+      ::placeholder {
+        color: #a3a3a3;
+        font-size: 14px;
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+      }
+    }
+  }
+  
+  .reactTagsInput {
+    padding: 10px 0;
+    margin-bottom: 0;
+    color: #2c2c2c;
+    width: 100%;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif; 
+    font-size: 16px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    margin:0;
+    svg {
+      margin-left: 8px;
+    }
+  }

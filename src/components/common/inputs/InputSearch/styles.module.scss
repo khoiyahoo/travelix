@@ -1,0 +1,48 @@
+.root {
+  
+}
+.rootTextField {
+    div::first-letter  {
+      border: 1px solid rgba(28, 28, 28, 0.2);
+      border-radius: 4px;
+    }
+}
+.inputTextfield {
+  input {
+    padding: 9px 16px !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--eerie-black);
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  :focus {
+    border-color: var(--primary-light-color) !important;
+  }
+  svg {
+    color: var(--primary-color) !important;
+  }
+  fieldset {
+    border-width: 1px !important;
+    border-color: #e3e3e3;
+
+  }
+  &.placeholder {
+    opacity: 1;
+    color: rgba(28, 28, 28, 0.4);    
+    font-size: 14px;
+  }
+  padding: 6px 16px !important;  
+  height: 32px !important;
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: var(--eerie-black);
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;  
+
+}

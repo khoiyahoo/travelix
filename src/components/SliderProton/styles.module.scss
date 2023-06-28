@@ -1,0 +1,11 @@
+.main {
+  padding: 0 16px;
+    [class~="MuiSlider-valueLabel"] {  
+      top: 25px !important;
+      span {
+        background-color: transparent !important;
+        color: var(--primary-color) !important;
+      }
+    }
+
+}

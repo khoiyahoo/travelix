@@ -1,0 +1,14 @@
+.title {
+    h5 {
+        font-weight: 700!important;
+    }
+    svg {
+        color: var(--danger-color);
+        margin-right: 8px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end !important;
+}

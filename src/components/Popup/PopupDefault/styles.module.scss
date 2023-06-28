@@ -1,0 +1,19 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 11.75rem auto;
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    [class~="modal-title"] {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    svg {
+        color: var(--green-color);
+        margin-right: 8px;
+    }
+}

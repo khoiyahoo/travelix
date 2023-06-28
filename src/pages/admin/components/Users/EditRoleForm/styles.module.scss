@@ -1,0 +1,58 @@
+.titleSelect {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0;
+    width: 100% !important;
+  }
+    .selectTourBtn {
+      width: 100% !important;
+      border-radius: 8px;
+      background-color: var(--white-color) !important;
+      border: 1px solid var(--gray-20) !important;
+      color: var(--text-color) !important;
+      svg {
+        color: var(--text-color) !important;
+      }
+    }
+    .selectTourBtn:hover {
+      background-color: var(--white-color) !important;
+    }
+    .menuChooseTour {
+      margin-top: 6px;
+      max-height: 224px;
+      width: 100%;
+      overflow: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar { 
+        display: none;
+      }
+    }
+    .menuItemFlex {
+      display: flex;
+      align-items: center;
+    }
+    .rootMenuCheckbox {
+      padding: 0 16px 0 0;
+    }
+    .menuChooseTourAction {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #dddddd;
+      padding: 16px 16px 8px;
+    }
+  
+  .listTextLeft {
+    flex: 1;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+    p {
+      margin: 0;
+    }
+  }
+
+
+  

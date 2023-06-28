@@ -1,0 +1,35 @@
+.has-danger {
+  .input-group {
+    .input-group-append,
+    .input-group-prepend {
+      > * {
+        border-color: #ffcfcf !important;
+      }
+    }
+  }
+}
+
+.content-center {
+  .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .page-header > .content {
+    flex: 1;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.pac-container {
+  z-index: 1100;
+}

@@ -1,0 +1,87 @@
+
+.containerMedia {
+    border: 1px solid #cccc;
+    padding: 16px;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+
+.containerHead {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+.containerAction {
+    height: 30px;
+}
+.titleName {
+    display: flex;
+    flex-direction: column;
+}
+.dropdownMenu {
+    min-width: 7rem;
+}
+.boxAction {
+    position: absolute;
+    top: -10px; right: -14px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+.boxAction:hover {
+    color: black;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.boxAction:focus {
+    color: black;
+}
+.itemAction {
+    padding: 8px 16px;
+    cursor: pointer;
+    svg {
+        margin-right: 8px;
+    }
+}
+.itemAction:hover {
+    background-color: var(--eerie-black-5) !important;
+}
+
+.actionDelete {
+    color: var(--danger-color);
+}
+.avatar {
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 16px;  
+    }
+}
+.boxReply {
+    display: flex;
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 16px;  
+    }
+}
+.commentText {
+    width: 100%;
+    p {
+        word-break: break-word !important;
+    }
+    
+}
+
+.inputReply {
+    margin-top:0 !important;
+}

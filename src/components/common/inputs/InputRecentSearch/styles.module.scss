@@ -1,0 +1,119 @@
+.root {
+    width: 100%;
+    position: relative;
+    fieldset {
+      border-width: 1px !important;
+      border-color: var(--primary-light-color);
+    }
+  }
+  .title {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+  .iconEye {
+    svg {
+      width: 17px;
+      height: 16px;
+    }
+  }
+  
+  .iconErrorOutline {
+    width: 20px;
+    height: 20px;
+    color: var(--cimigo-danger);
+  }
+  
+  .inputTextfield {
+    &[class~=Mui-disabled] {
+      background: var(--gray-5);
+      ::placeholder {
+        color: var(--gray-20);
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+      }
+      .iconErrorOutline {
+        display: none;
+      }
+    }
+    ::placeholder {
+      color: var(--gray-50);
+      font-weight: 400;
+      font-size: 14px; 
+      opacity: 1;
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+    }
+    
+    &:focus {
+      border: var(--primary-light-color) !important;
+    }
+    svg {
+      color: var(--primary-color) !important;
+    }
+
+      padding: 8px 16px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px !important;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+      color: var(--eerie-black);
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+
+
+  }
+
+  .inputInvalid {  
+    fieldset {
+      border: 1px solid var(--danger-color);
+    }
+  }
+  .optional {
+    color: var(--green-dark);
+  }
+  .textInfor {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray-80);
+    margin: 0;
+  }
+  
+  .titleRequired {
+    color: var(--danger-color);
+  }
+.recentSearchBox {
+    padding: 32px;
+    position: absolute;
+    width: 785px;
+    height: 335px;
+    background-color: var(--white-color);
+    top: 40px;
+    z-index: 10;
+    right: -5px;
+    box-shadow: var(--bui-shadow-200);
+    border-radius: 10px;
+        svg {
+            font-size: 14px;
+            color: var(--gray-60);
+            margin-right: 8px;
+        }
+        p{
+            margin: 0;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: none;
+    
+        }
+        span {
+            font-weight: 600;
+            color: var(--gray-40);
+            font-size: 12px;
+        }
+
+}

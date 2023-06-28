@@ -1,0 +1,57 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 5.75rem auto;
+    }
+    p {
+        margin: 0;
+    }
+    max-width: 925px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    [class~="modal-title"] {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    svg {
+        color: var(--green-color);
+        margin-right: 8px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+
+
+.listNav {
+    display: flex;
+
+}
+
+.rootOverview {
+    padding-bottom: 24px;
+    .titleDetail {
+        font-weight: 700;
+        span {
+            color: var(--orange-color);
+        }
+    }
+    .boxTitle {
+        display: flex;
+        svg {
+            margin-right: 8px;
+            color: var(--primary-light-color-1);
+        }
+        p{
+            font-weight: 700;
+        }
+    }
+    .boxDuration {
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,29 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 8.75rem auto;
+    }
+    z-index: 100;
+}
+.title {
+    h5 {
+        font-weight: 600 !important;
+    }
+    
+}
+.labelText {
+    font-size: 14px;
+} 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .action {
+        display: flex;
+        justify-content: flex-end;
+    }
+    p{
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}

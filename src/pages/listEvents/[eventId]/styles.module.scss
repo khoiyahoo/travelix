@@ -1,0 +1,117 @@
+.containerBody {
+    background-color: var(--background-container-color);
+    padding-bottom: 32px;
+    position: relative;
+}
+.imgHeader {
+    min-height: 25vh;
+}
+
+.titleBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    @media only screen and (max-width: 768px) {
+        margin-top: 0px;
+        padding: 24px;
+      }
+    > div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-weight: 500;
+    }
+}
+
+.boxTicket {
+    width: 440px;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 14px;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    .titleTicket {
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        p {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 16px;
+            font-weight: 700;
+        }
+        svg {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+    }
+    .inputCode {
+        cursor: pointer !important;
+        input {
+            color: var(--gray-80) !important;
+            font-weight: 500 !important;
+        }
+    }
+    .textCopyInput {
+        margin: 0;
+        color: var(--primary-light-color-1);
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .description {
+        padding-bottom: 10px;
+        p {
+            margin: 0;
+        }
+    }
+    .footTicket {
+        cursor: pointer;
+        p {
+            margin: 0;
+            color: var(--primary-light-color-1);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.textRemind {
+    padding: 24px 0;
+    p {
+        margin: 0;
+        font-style: italic;
+        color: var(--text-color);
+    }
+}
+
+.btnFind {
+    width: 100%;
+}
+
+.boxTip {
+    padding-top: 24px;
+    p {
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    ul {
+        padding: 0;
+        padding-left: 24px;
+        li {
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
+    }
+}

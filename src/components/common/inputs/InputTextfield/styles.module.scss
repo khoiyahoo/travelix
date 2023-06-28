@@ -1,0 +1,102 @@
+.root {
+  width: 100%;
+  text-align: left;
+}
+.title {
+  color: rgba(28, 28, 28, 0.9);
+  font-size: 14px;
+  font-weight: 700 !important;
+  line-height: 140%;
+  letter-spacing: 0.015em;
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+.iconEye {
+  svg {
+    width: 17px;
+    height: 16px;
+  }
+}
+
+.iconErrorOutline {
+  width: 20px;
+  height: 20px;
+  color: var(--cimigo-danger);
+}
+
+.inputTextfield {
+  &[class~=Mui-disabled] {
+    background-color: #E3E3E3;
+    ::placeholder {
+      color: #888888 !important;
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px;
+    }
+    .iconErrorOutline {
+      display: none;
+    }
+        [class~=MuiOutlinedInput-notchedOutline] {
+      border-color: transparent !important;
+    }
+  }
+
+  ::placeholder {
+    color: var(--gray-50);
+    font-weight: 400;
+    font-size: 14px; 
+    opacity: 1;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  
+  :focus {
+    border-color: var(--primary-light-color);
+  }
+  svg {
+    color: var(--primary-color) !important;
+  }
+  input {
+    padding: 11px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--eerie-black);
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  textarea {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--eerie-black);
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  fieldset {
+    border-width: 1px !important;
+    border-color: #c4c4c4;
+
+  }
+}
+.inputInvalid {  
+  fieldset {
+    border: 1px solid var(--danger-color);
+  }
+}
+.optional {
+  color: var(--green-dark);
+}
+.textInfor {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray-80);
+  margin: 0;
+  text-align: right;
+}
+
+.titleRequired {
+  color: var(--danger-color);
+}

@@ -1,0 +1,328 @@
+.root {
+    padding: 64px 248px;
+    @media only screen and (max-width: 768px) {
+        padding: 24px;
+    }
+}
+.containerBoxCard {
+    height: 515px;
+    @media only screen and (max-width: 600px) {
+        height: 250px;
+    }
+}
+.title {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.card6 {
+    background-image: url("../../../../assets/img/phu-quoc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    border-radius: 10px !important;
+    cursor: pointer;
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+.col4 {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.col4Long {
+    max-width: 100%;
+    cursor: pointer;
+    
+}
+.card4Long {
+    background-image: url("../../../../assets/img/da-nang.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.col4Short {
+    max-width: 100%;
+    cursor: pointer;
+
+}
+.card4Short {
+    background-image: url("../../../../assets/img/nha-trang.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.card41Equal {
+    background-image: url("../../../../assets/img/ha-long.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.card42Equal {
+    background-image: url("../../../../assets/img/da-lat.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.card41Long {
+    background-image: url("../../../../assets/img/hue.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.card41Short {
+    background-image: url("../../../../assets/img/sa-pa.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 !important;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    p {
+        margin-bottom: 0;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+
+.cardPhuYen {
+    background-image: url("../../../../assets/img/phu-yen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.cardVungTau {
+    background-image: url("../../../../assets/img/vung-tau.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.cardDaLat {
+    background-image: url("../../../../assets/img/da-lat1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.cardQuyNhon {
+    background-image: url("../../../../assets/img/quy-nhon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px !important;
+
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+.col8 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.col6 {
+    max-width: 100%;
+}

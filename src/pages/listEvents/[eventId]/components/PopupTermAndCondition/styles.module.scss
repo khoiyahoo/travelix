@@ -1,0 +1,26 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 5.75rem auto;
+    }
+    span {
+        font-weight: 700;
+    }
+    li {
+        margin-bottom: 14px;
+        font-weight: 500;
+        font-size:16px;
+    }
+
+}
+.modalBody {
+    overflow-y: auto;
+    padding-top: 0 !important;
+}
+
+.title {
+    padding-bottom: 24px !important;
+    h5 {
+        font-weight: 700!important;
+        color: var(--text-color);
+    }
+}

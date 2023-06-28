@@ -1,0 +1,23 @@
+.icGoogle {
+    border: 1px solid rgba(28, 28, 28, 0.2);
+    border-radius: 50px;
+    text-transform: none;
+    width: max-content;
+    font-size: 14px;
+    color: #1C1C1C !important;
+    padding: 8px 16px;
+    margin: 0px auto 25px;
+    font-weight: 500;
+    background: var(--white-color) !important;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 70%) !important;
+    img {
+        margin-right: 5px;
+    }
+    &:hover {
+        border: 1px solid rgba(28, 28, 28, 0.2);
+        box-shadow: none !important;
+    }
+    &:active {
+        border: 1px solid rgba(28, 28, 28, 0.2) !important;
+    }
+  }

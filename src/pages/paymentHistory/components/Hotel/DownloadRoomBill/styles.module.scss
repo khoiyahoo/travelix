@@ -1,0 +1,57 @@
+.modal {
+  [class~="modal-content"]{
+    width: unset;
+  }
+}
+.titleHeader {
+  h5 {
+      font-weight: 700!important;
+      color: var(--text-color);
+      text-transform: uppercase;
+  }
+}
+
+.pdfWrapper {
+  // width: 841px;
+  padding: 20px;
+  width: 595px;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.title {
+  font-weight: 600 !important;
+  font-size: 1.3em !important;
+  margin-bottom: 8px !important;
+  text-transform: uppercase !important;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 8px 0;
+}
+
+.titleInfo {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  margin-bottom: 8px !important;
+}
+
+.info {
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+.subTitle {
+  font-weight: 500 !important;
+  font-size: 1em !important;
+}
+
+.paragraphFontSize {
+  font-size: 0.7em !important;
+}
+
+.downloadBtnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+}

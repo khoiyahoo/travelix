@@ -1,0 +1,91 @@
+html,
+:root {
+  --white-color: #ffff;
+  --primary-transparent-color:rgba(19, 22, 84, 0.85);
+  --primary-color: #25316D;
+  --primary-light-color: #4A8BB0;
+  --primary-light-color-1: #5BC0F8;
+  --primary-light-color-2: #bed7f3;
+  --primary-light-color-3: #e8f1fb;
+  --background-container-color: rgb(242 243 243);
+  --warning-color: #f2bb2e;
+  --warning-text-color: #9b6907;
+  --purple-color: #b69cc4;
+  --violet-light-color:#4a1a67;
+  --violet-dark-color:#2c0a42;
+  --text-color: #000;
+  --orange-color: #fa9e1b;
+  --success-color: #2B7A0B;
+  --success-light-color: #7DCE13;
+  --green-color: #7c9911;
+  --green-dark: #bbe22d;
+  --danger-color: #af1c10;
+  --orange-light-color: #e7a64c;
+  --linear-primary-color: linear-gradient(to right, rgb(250, 158, 27), rgb(141, 79, 255));
+  --linear-second-color: linear-gradient(#650eb6 0%, #000 80%);
+  --eerie-black-5:#1c1c1c0d;
+  --eerie-black-40: #1c1c1c66;
+  --eerie-black-20: #1c1c1c33;
+  --eerie-black-65: #1c1c1ca6;
+  --gray-02: #373d3f;
+  --gray-5: #f4f4f4;
+  --gray-6: #A7AFB2;
+  --gray-10: #e8e8e8;
+  --gray-20: #d2d2d2;
+  --gray-30: #bbbbbb;
+  --gray-40: #a4a4a4;
+  --gray-50: #8d8d8d;
+  --gray-60: #767676;
+  --gray-80: #494949;
+  --gray-90: #333333;
+  --blue-color: #1f61a9;
+  --box-shadow-100: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --bui-shadow-200: 0 2px 16px 0 rgba(0,0,0,0.24);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-20); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-20); 
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

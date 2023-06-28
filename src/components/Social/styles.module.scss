@@ -1,0 +1,45 @@
+.root {
+    background: #dbdbdb;
+    padding: 48px;
+}
+.titleSocial {
+    h2{
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+}
+.subTitleSocial {
+    h4 {
+        margin-top:0;   
+    }
+}
+.linkTitleSocialWrapper {
+    display: flex;
+    justify-content: center;
+}
+.listSocial {
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style: none;
+        display: flex;
+        padding-left:0;
+        .itemSocial {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 12px;
+            background:var(--orange-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--orange-color); 
+            cursor: pointer; 
+            color: var(--white-color) !important;   
+        }
+        .itemSocial:hover, .linkSocial :hover{
+            color: var(--orange-color) !important;
+            background-color: var(--white-color) !important;
+        }
+    }
+}

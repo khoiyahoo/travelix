@@ -1,0 +1,44 @@
+.root {
+    display: flex;
+    justify-content: center;
+    background: var(--linear-primary-color);
+}
+
+.wrapper {
+    width: 90%;
+    padding: 50px;
+    background: #ffff;
+    margin: 20px 0px; 
+    border-radius: 66px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    @media only screen and (max-width: 600px) {
+        padding: 25px;
+    }
+}
+
+.itemService {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 18px;
+        font-weight:700;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+        span {
+            font-size: 8px;
+        }
+       img {
+        display: none;
+       }
+    }
+    @media only screen and (min-width: 600px) and (max-width:768px) {
+        span {
+            font-size: 10px;
+        }
+    }
+}

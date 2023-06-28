@@ -1,0 +1,91 @@
+.sectionHeader {
+    min-height: 35vh !important;
+}
+.root {
+    padding-top: 57px;
+    padding-bottom: 188px;
+}
+.rootContent {
+    background-color: #f3f3f3;
+}
+.headerPaymentHistory {
+    align-items: center;
+    margin: 0;
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 16px;
+    }
+    .inputSearch {
+        margin-left: auto;
+    }
+    .boxControl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        .inputSearch {
+            margin:0;
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+}
+
+.searchTour {
+    margin-left: auto;
+    padding: 0;
+    @media only screen and (max-width: 768px) {
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    span {
+        font-weight: 700;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    [class~="nav-item"] {
+        margin-bottom: 8px;
+        cursor: pointer;
+        &:hover {
+            background: rgba(239, 238, 238, 0.8);
+            border-radius: 8px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        text-align: left;
+    }
+}
+.navLink {
+    font-weight: 600;
+    svg {
+        margin-right: 8px;
+    }
+
+}
+.navItem {
+    background-color: var(--gray-10);
+    margin-right: 10px;
+    border-radius: 4px !important;
+    [class~="nav-link"] {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary-color) !important;
+        margin-right: 0 !important;
+    }
+    [class~="active"] {
+        color: var(--white-color) !important;
+        background-color: var(--primary-color) !important;
+        border-radius: 4px !important;
+    }
+}

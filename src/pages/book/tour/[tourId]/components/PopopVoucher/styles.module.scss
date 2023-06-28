@@ -1,0 +1,35 @@
+.titleHeader {
+    p {
+        margin: 0;
+        font-weight: 700;
+    }
+
+}
+
+.body {
+    span {
+        font-size: 14px;
+    }
+}
+
+.boxVoucherItem { 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    border: 1px solid var(--gray-40) !important;
+    padding: 16px;
+    border: 0;
+    white-space: nowrap;
+    margin-bottom: 14px;
+    span {
+        font-weight: 600 !important;
+    }
+}
+.boxVoucherItemInValid {
+    display: none;
+}
+.footer {
+    justify-content: flex-end !important; 
+}

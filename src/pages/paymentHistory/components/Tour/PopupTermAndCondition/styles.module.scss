@@ -1,0 +1,44 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 5.75rem auto;
+    }
+    p {
+        margin: 0;
+    }
+}
+.modalBody {
+    padding-top: 0 !important;
+}
+.title {
+    padding-bottom: 24px !important;
+    h5 {
+        font-weight: 700!important;
+        color: var(--text-color);
+    }
+}
+
+.itemPolicy {
+    span {
+        font-weight: 700;
+
+    }
+}
+.rootOverview {
+    padding-bottom: 24px;
+    .titleDetail {
+        font-weight: 700;
+    }
+    .boxTitle {
+        display: flex;
+        svg {
+            margin-right: 8px;
+            color: var(--primary-light-color-1);
+        }
+        p{
+            font-weight: 700;
+        }
+    }
+    .boxDuration {
+        font-weight: 500;
+    }
+}

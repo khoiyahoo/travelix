@@ -1,0 +1,38 @@
+.root {
+    text-align: left;
+    font-size:16px;
+    & [class~="input-group"] {
+      margin: 0;
+    }
+    &::after {
+      content: "" !important;
+    }
+    &[class~="has-danger"] {
+      [class~="form-control"] {
+        border-color: #ffcfcf !important;
+      }
+    }
+  }
+  
+  .textarea {
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    &:focus {
+      border: 1px solid #f96332 !important;
+    }
+    &::placeholder {
+      font-size: 14px !important;
+    }
+
+  }
+
+.errorMessage{
+  font-size: 14px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}

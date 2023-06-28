@@ -1,0 +1,129 @@
+.inputSearchLocation {
+    background-color: var(--white-color);
+    border-radius: 4px;
+    input {
+        padding: 13px 16px;
+    }
+}
+
+.inputSearchDate {
+    // background-color: var(--white-color);
+    border-radius: 4px;
+    width: 100%;
+    [class~=rdt] [class~=form-control] {
+        padding: 14px 12px 15px 41px !important;
+    }
+    > div:first-child {
+        top: 15px;
+    }
+    > div:first-child {
+        top: 15px;
+    }
+    >span {
+        background-color: transparent;
+    }
+}
+
+.titleInput {
+    font-size: 14px;
+    color: var(--white-color);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.boxDate {
+    display: flex;
+    padding-top: 14px;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding-top: 0;
+    }
+}
+.boxItemLocation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    @media only screen and (max-width: 768px) {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-bottom: 14px;
+    }
+}
+.boxSearchDate {
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
+}
+.boxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 14px;
+    }
+}
+.boxItem:first-child {
+    padding-right: 16px;
+    @media only screen and (max-width: 768px) {
+        padding-right: 0;
+    }
+}
+
+.boxItem:last-child {
+    padding-left: 16px;    
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        padding-top: 14px;
+        button {
+           width: 100%;
+        }
+    }
+}
+
+.boxItemBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 28px;
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 14px;
+    }
+}
+.boxGuest {
+    position: relative;
+}
+.containerChooseGuest {
+    position: absolute;
+    top: 80px;
+    background-color: var(--white-color);
+    padding: 16px 16px 16px 16px !important;
+    min-width: 280px;
+    border-radius: 4px;
+    box-shadow: 5px 10px var(--box-shadow-100);
+}
+
+.boxTitleCounter {
+    display: flex;
+    align-items: center;
+    svg {
+        color: var(--primary-color);
+        margin-right: 8px;
+    }
+    p {
+        margin: 0;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+}
+.boxBtnSearch{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 16px;
+    
+    .btnSearch {
+        margin-left: auto;
+    }
+}

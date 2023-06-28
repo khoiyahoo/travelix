@@ -1,0 +1,362 @@
+.root {
+    background: #f6f2f2;
+    position: relative;
+    .container {
+        background: #ffff;
+        border-radius: 12px;
+        box-shadow: 0px 1px 2px rgb(3 18 26 / 20%);
+    }
+}
+.containerImg {
+    .wrapperImg {
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        .rowImg {
+            height: 50%;
+            @media only screen and (max-width: 600px) {
+                height: 100%;
+             }
+        }
+        .rowImg:first-child {
+            padding-bottom: 12px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .wrapperImg1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        @media only screen and (max-width: 600px) {
+            padding-left: 15px;
+         }
+    }
+    .moreImg {
+        position: relative;
+
+    }
+    .modalImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(3,18,26,1.00);
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        p{
+            font-size: 18px;
+            color: var(--white-color);
+            font-weight: 700;
+            z-index: 10;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .mobileImg {
+            display: none;
+        }
+     }
+
+}
+.content {
+    margin-top: 12px;
+    position: relative;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+     }
+}
+.leftContent {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-right: 1px solid #ccc;
+    @media only screen and (max-width: 600px) {
+        max-width: 100%;
+        border-right: none;
+     }
+    .leftTextTitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .leftTextPanel {
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 12px;
+        margin-bottom: 10px;
+
+    }
+    .highlightContent {
+        padding-left: 28px;
+        margin-bottom: 24px;
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    .goodWrapper {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        background-color: #f6f2f2;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 24px;
+        svg {
+            font-size: 24px;
+            color: var(--orange-color);
+            margin-right: 8px;
+        }
+        p { 
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+            span { 
+                font-weight: 700;
+            }
+        }
+    }
+    .itineraryBox {
+        [class~="MuiButtonBase-root"] {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border-radius: 4px;
+            font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+            margin-right: 10px;
+            opacity: 1;
+        }
+        [class~="Mui-selected"] {
+            border-bottom: 1px solid var(--primary-color)!important;
+        }
+    }
+    .textDescription {
+        font-size: 16px;
+        font-weight: 300 !important;
+        text-align: justify;
+        margin: 0 24px;
+    }
+    .mapBox {
+        margin-top: 14px;
+        .locationDetail {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .map {
+            height: 135px;
+        }
+        .contactBox {
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+            font-weight:600;
+            margin-top: 14px;
+            p {
+                margin: 0;
+                margin-left:  8px;
+            }
+            svg {
+                font-size: 18px;
+                color: var(--orange-color);
+            }
+            a {
+                color: var(--primary-color) !important;
+                margin-left:  8px;
+            }
+        }
+    }
+
+}
+.rightContent {  
+    position: sticky;
+    top: 50px;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    padding: 24px;
+    @media only screen and (max-width: 600px) {
+        max-width: 100%;
+     }
+    .boxSelect {
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    .inputStartDate {
+        tbody > tr :not([class~="rdtDisabled"]) {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+    }
+    .boxTime {
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+        }   
+        svg {
+            margin-right: 13px;
+            color: var(--primary-color);
+        }
+    }
+    .inputSelect {
+        width: 100%;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    .boxNumberTickets {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        p {
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    .tipWrapper {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 12px;
+    }
+    .priceWrapper {
+        margin-top: 14px;
+        .discount {
+            span {
+                color: var(--orange-color);
+            }
+        }
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0;
+            line-height: 20px;
+
+        }
+        .price {
+            color: var(--orange-color);
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 16px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .btnBookNow {
+        width: 100%;
+        font-size: 16px;
+        margin: 12px 0;
+    }
+    a:hover {
+        text-decoration: none !important;
+    }
+    .serviceTip {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+        p {
+            margin-bottom: 0;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+        svg {
+            font-size: 18px;    
+            color: var(--orange-color);
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    .featureWrapper {
+        padding-top: 12px;
+        .featureTitle {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .btnSeeDetail {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+}
+
+
+.nameTour {
+    color: var(--primary-color) !important;
+    margin-bottom: 0;
+}   
+.subProduct {
+    display: flex;
+    margin-top: 16px;
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 12px;
+     }
+.tags {
+    display: flex;
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 0;
+        margin-right: 10px;
+     }
+    .badgeTags {
+        color: var(--primary-color) !important;
+        border: 1px solid var(--primary-light-color-1);
+        background-color: var(--primary-light-color-1);
+        margin-left: 8px;
+    }
+    .badgeTags:first-child {
+        margin-left: 0;
+    }
+
+}
+.locationRate {
+        display: flex;
+        margin-left: 16px;
+        color: var(--primary-light-color);
+        @media only screen and (max-width: 600px) {
+            margin-left: 0;
+         }
+        .starRating {
+            margin-left: 16px;
+        }
+        p {
+            margin-bottom: 0;
+            margin-left: 4px;
+            font-size: 16px;
+            font-weight: 600;        
+        }
+        svg {
+            font-size: 20px;
+        }
+}
+}
+
+.locationStart {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 12px;
+    p {margin: 0;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+    span {
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+}

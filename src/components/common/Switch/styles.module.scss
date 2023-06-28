@@ -1,0 +1,14 @@
+.root {
+    text-align: left;
+    & [class~="input-group"] {
+      margin: 0;
+    }
+    &::after {
+      content: "" !important;
+    }
+    [class~="bootstrap-switch-handle-on"] {
+      background: var(--primary-color);
+      border-radius: 30px;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+
+    .navItem {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .boxStep {
+        padding-left: 4px;
+    }
+    .stepper {
+        [class~="MuiStepConnector-root"] {
+            margin-left: 4px !important;
+        }
+    }
+    .step {
+        [class~="MuiSvgIcon-root"] {
+            color: var(--primary-color);
+        }
+        p {
+            font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+            margin-bottom: 0;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.87);
+            span {
+                font-weight: 700;
+            }
+        }
+        svg {
+            width: 10px;
+            height: 10px;
+        }
+        text {
+            display: none;
+        }
+
+    }

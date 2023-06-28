@@ -1,0 +1,114 @@
+.headerWrapper {
+    background-image: url("../../../assets/img/seathen.jpg");
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding-top: 80px;
+    .card {
+        border-radius: 16px;
+    }
+    @media only screen and (max-width: 767px) {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+}
+
+.headerLoginContainer {
+   p {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight:700;
+    margin-bottom: 0;
+    color: var(--primary-color);
+   }
+}
+
+.checkboxContainer {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnLoginContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.separator {
+    padding: 24px 0px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    &:before {
+      content: " ";
+      flex: 1;
+      border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+    }
+    &:after {
+      content: " ";
+      flex: 1;
+      border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+    }
+    .childrenSeparator {
+      margin: 0px 21px;
+      margin-top: -2px;
+      @media only screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      line-height: 16px;
+    }
+}
+
+.boxTextRole {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .boxCheckRole {
+    display: flex;
+    align-items: center;
+  }
+}
+.textYouAre {
+  font-size: 14px; 
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.boxError {
+  margin-top: 8px;
+}
+
+.linkResend {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.popupResend {
+  button {
+    margin-left: auto;
+  }
+}

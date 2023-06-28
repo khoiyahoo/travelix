@@ -1,0 +1,140 @@
+.root {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .iconEye {
+    svg {
+      width: 17px;
+      height: 16px;
+    }
+  }
+  
+  .iconErrorOutline {
+    width: 20px;
+    height: 20px;
+    color: var(--danger-color);
+  }
+  .title {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }
+  .inputTextfield {
+    border: 1px solid var(--gray-20) !important;
+
+    &[class~="Mui-disabled"] {
+      background: var(--gray-5);
+      fieldset {
+        border: 1px solid var(--gray-20) !important;
+        border-radius: initial;
+        &[class~="MuiOutlinedInput-notchedOutline"] {
+          border: 1px solid var(--gray-20) !important;
+        }
+      }
+      ::placeholder {
+        color: var(--gray-20);
+      }
+      .iconErrorOutline {
+        display: none;
+      }
+    }
+    ::placeholder {
+        color: var(--gray-50);
+        font-weight: 400;
+        font-size: 14px; 
+        opacity: 1;
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+    }
+  
+    :focus {
+      caret-color: var(--cimigo-blue-light-1);
+    }
+    [class~="MuiInputBase-root"] {
+      &:hover {
+        &::before {
+          border: none;
+        }
+        &::after{
+          border: none;
+  
+        }
+      }
+      &::before {
+        border: none;
+      }
+      &::after{
+        border: none;
+
+      }
+    }
+    input {
+      padding: 7px 16px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px !important;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+      color: var(--eerie-black);
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+      &::before {
+        border: none;
+      }
+      &::after{
+        border: none;
+
+      }
+    }
+    padding-left: 9px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    fieldset {
+        border-width: 1px !important;
+        border-color: #e3e3e3;
+    
+      }
+    &[class~="Mui-error"] {
+      fieldset {
+        &[class~="MuiOutlinedInput-notchedOutline"] {
+          border: 1px solid var(--gray-20);
+        }
+      }
+    }
+  }
+  .inputInvalid {
+    fieldset {
+      border: 1px solid var(--danger-color) !important;
+      border-radius: 4px;
+    }
+    &[class~="Mui-error"] {
+      fieldset {
+        &[class~="MuiOutlinedInput-notchedOutline"] {
+            border: 1px solid var(--danger-color) !important;
+            border-radius: 4px;
+        }
+      }
+    }
+  }
+  
+  .optional {
+    color: var(--cimigo-green-dark);
+  }
+  .textInfor {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray-80);
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 9px;
+  }
+  
+  .titleRequired {
+    color: var(--cimigo-danger);
+  }
+  

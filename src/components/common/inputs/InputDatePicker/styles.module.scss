@@ -1,0 +1,96 @@
+.root {
+  margin-bottom: 0 !important;
+}
+
+.form {
+  // position: relative;
+}
+.danger {
+  [class~="form-control"] {
+    border-color: var(--danger-color);
+  }
+  
+}
+.datePickerInput {
+  [class~="form-control"] {
+    padding: 13px 12px 12px 41px !important;
+  }
+  [class~=rdtDay] {
+    color: var(--text-color);
+ } 
+ [class~=rdtMonth] {
+  color: var(--text-color);
+} 
+[class~=rdtYear] {
+  color: var(--text-color);
+} 
+    input {
+        display: block;
+        width: 100%;
+        min-width: 100px;
+        background-color: white;
+        border: 1px solid #c4c4c4;
+        border-radius: 4px;
+        color: #2c2c2c;
+        height: auto;
+        line-height: normal;
+        font-size: 14px !important; 
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+          background-color 0.3s ease-in-out;
+          padding: 10px 12px 12px;
+        box-shadow: none;
+        
+        &:focus {
+          border: 1px solid var(--primary-light-color);
+          box-shadow: none;
+          outline: 0 !important;
+          color: #2c2c2c;
+        }
+        &::placeholder {
+          color: #888888;
+          opacity: 0.8;
+          font-size: 14px !important;
+        }
+        &:-ms-input-placeholder {
+          color: #888888;
+          opacity: 0.8;
+        }
+        &::-ms-input-placeholder {
+          color: #888888;
+          opacity: 0.8;
+        }
+        &:hover {
+          border: 1px solid rgba(33, 33, 33, 1);
+        }
+    }
+  }
+  .iconLabel {
+    position: absolute;
+    top: 36px;
+    left: 14px;
+    z-index: 10;
+    svg {
+      color: var(--primary-color);
+      font-size: 16px;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 10;
+    svg {
+      color: var(--primary-color);
+      font-size: 16px;
+    }
+  }
+  .label {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  }

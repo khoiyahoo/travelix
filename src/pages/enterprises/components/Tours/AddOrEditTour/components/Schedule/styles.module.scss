@@ -1,0 +1,38 @@
+.root {
+    p {
+        margin: 0;
+    }
+
+}
+
+
+.boxDateTitle {
+    padding: 8px;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white-color);
+    max-width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
+
+.btnClickAddMileStone {
+    cursor: pointer;
+    margin-left: 24px;
+}
+.boxAddDay {
+    margin: 24px 0;
+    display: flex;
+}
+
+.boxNextBtn {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+        font-size: 24px;
+    }
+}

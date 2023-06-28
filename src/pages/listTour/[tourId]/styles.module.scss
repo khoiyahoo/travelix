@@ -1,0 +1,19 @@
+
+.boxStopWorking {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    svg {
+        width: 300px;
+        height: 300px;
+        color: var(--gray-40);
+    }
+    h3 {
+        color: var(--gray-40);
+    }
+}
+.sectionHeader {
+    min-height: 35vh;
+}

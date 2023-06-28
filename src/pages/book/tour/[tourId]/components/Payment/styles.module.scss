@@ -1,0 +1,66 @@
+.root {
+    margin-bottom: 100px;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+}
+.box {
+    margin-top: 16px;
+}
+.boxLeft {
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+}
+.boxRight {
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+}
+.sectionHeader {
+    min-height: 35vh;
+}
+.boxCostSummary {
+    margin-top: 16px;
+    p {
+        font-weight: 700;
+        >span {
+            color: var(--orange-color);
+            font-weight: 700;
+        }
+    }
+    span {
+        font-weight: 500;
+    }
+    .price {
+        font-size: 20px;
+        >span {
+            font-size: 20px;
+        }
+    }
+
+}
+
+.boxTotalPrice {
+    p {
+        font-size: 24px;
+    }
+}
+
+.btnPlaceOrder {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.titleBanks {
+    font-weight: 500;
+}
+
+.row {
+    @media only screen and (max-width: 768px) {
+        display: block;
+        .colInfor {
+            max-width: 100%;
+        }
+      }
+}

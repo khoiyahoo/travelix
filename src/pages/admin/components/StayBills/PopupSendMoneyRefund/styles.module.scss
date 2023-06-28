@@ -1,0 +1,18 @@
+.title {
+    h5 {
+        font-weight: 700!important;
+    }}
+
+.footer {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.boxItemInfo {
+    display: flex;
+    p {
+        margin: 0;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+}

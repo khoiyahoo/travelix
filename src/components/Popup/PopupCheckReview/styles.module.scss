@@ -1,0 +1,39 @@
+.root {
+    &[class~=modal-dialog] {
+        margin: 11.75rem auto;
+    }
+}
+
+.title {
+    margin: 0;
+    [class~="modal-title"] {
+        font-weight: 600;
+    }
+    svg {
+        color: var(--green-color);
+        margin-right: 8px;
+    }
+    button {
+        top: 26px !important;
+        position: initial !important;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    img {
+        width: 200px;
+        height:100px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end !important;
+}

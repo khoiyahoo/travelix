@@ -1,0 +1,47 @@
+.root {
+    padding-top: 50px;
+}
+.navItem {
+    
+}
+.navLink {
+    display: flex;
+    border-radius: 0 !important;
+    background-color: #FFFFFF !important; 
+    align-items: center; 
+    svg {
+        margin-right: 8px;
+    }
+    span {
+        font-size: 16px;
+    }
+}
+.active {
+    display: flex;
+    align-items: center; 
+    border-radius: 0 !important;
+    border-right: 3px solid var(--orange-color);
+    svg {
+        margin-right: 8px;
+    }
+    span {
+        font-size: 16px;
+    }
+}
+
+.tabContent {
+    padding: 24px 24px 24px 64px;
+    @media only screen and (max-width: 768px) {
+        padding: 24px 24px 24px 24px;   
+    }
+}
+
+.navLogout {
+    padding: 10px 23px;
+    a {
+        font-size: 16px;
+        svg {
+            margin-right: 8px;
+        }
+    }
+}

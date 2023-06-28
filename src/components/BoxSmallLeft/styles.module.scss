@@ -1,0 +1,29 @@
+.root {
+    border: 1px solid #cccc;
+    margin-top: 16px; 
+    border-radius: 4px;
+    padding-bottom: 12px;
+    background-color: var(--white-color);
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: var(--primary-color);
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    span {
+        color: #ffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+.body {
+    padding: 0 12px;
+}

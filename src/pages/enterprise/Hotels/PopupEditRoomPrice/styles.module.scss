@@ -1,0 +1,39 @@
+.form {
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .footer{
+    justify-content: flex-end !important;
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+
+.table {
+        th {
+            text-align: center;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            border-right: 1px solid #dee2e6 !important;
+        }
+        thead{
+            background-color: var(--primary-color);
+            color: #ffff;
+        }
+ }
+    .tdPriceInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            background: #ffff;
+            border: 1px solid #ccc;
+            color: #000;
+        }
+}

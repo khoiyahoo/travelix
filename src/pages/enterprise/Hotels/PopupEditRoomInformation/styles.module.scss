@@ -1,0 +1,16 @@
+.form {
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .footer{
+    justify-content: flex-end !important;
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}

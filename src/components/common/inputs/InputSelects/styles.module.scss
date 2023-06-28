@@ -1,0 +1,16 @@
+.root {
+    text-align: left;
+    &[class~="has-danger"] {
+      &::after {
+        display: none;
+      }
+      [class~="react-select__control"] {
+        border-color: #ffcfcf;
+      }
+    }
+  }
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }

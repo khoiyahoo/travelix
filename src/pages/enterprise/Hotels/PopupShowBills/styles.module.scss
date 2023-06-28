@@ -1,0 +1,33 @@
+.modal {
+    max-width: 1140px;
+}
+
+.form {
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .footer{
+    justify-content: flex-end !important;
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+
+.table {
+   
+    th {
+        
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+    thead{
+        background-color: var(--primary-color);
+        color: #ffff;
+    }
+}

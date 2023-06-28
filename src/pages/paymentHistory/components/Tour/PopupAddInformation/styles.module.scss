@@ -1,0 +1,88 @@
+.form {
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .footer{
+    justify-content: flex-end !important;
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+}
+.boxTitleRoomNumber {
+    margin-top: 16px;
+    p {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.titlePriceTable {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #000000;
+    }
+    &:focus {
+        color: #000000;
+    }
+    i {
+        margin-left: 8px;
+    }
+}
+.cardBody {
+    padding:0;
+    padding-top: 8px;
+    .table {
+        th {
+            text-align: center;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            border-right: 1px solid #dee2e6 !important;
+        }
+        thead{
+            background-color: var(--primary-color);
+            color: #ffff;
+        }
+    }
+    .tdPriceInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            background: #ffff;
+            border: 1px solid #ccc;
+            color: #000;
+        }
+    }
+}
+
+.boxClickAdd {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    cursor: pointer;
+    svg {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+}
+
+.boxDeleteRoom {
+    flex: 0;
+    cursor: pointer;
+    svg {
+        font-size: 16px;
+        color: var(--danger-color);
+    }
+}

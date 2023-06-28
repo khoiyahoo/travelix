@@ -1,0 +1,43 @@
+.root {
+    padding: 64px 250px;
+    @media only screen and (max-width: 768px) {
+        padding: 24px;
+    }
+}
+
+.infoBodyListContact {
+    padding-top:16px;
+    padding-left: 28px;
+}
+.infoContact {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+.infoContact svg{
+    font-size:25px;
+    color:var(--orange-color);
+    margin-right:20px;
+}
+.infoContact p{
+    font-size:15px;
+    max-width:215px;
+    color:#9A9A9A;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.contact-link-info{
+    text-decoration: none;
+}
+.infoContact p:hover{
+    color:var(--orange-color);
+}
+
+.foodContact {
+        width: 100% !important;
+        border-radius: 10px;
+}
+.cardFood {
+    border-radius: 10px;
+
+}

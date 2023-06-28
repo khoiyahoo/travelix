@@ -1,0 +1,34 @@
+.root {
+    width: 790px;
+    max-width: 790px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 100%;
+      padding: 24px;
+      overflow: hidden;
+    }
+}
+.form {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .row {
+    margin: 0;
+    flex-wrap:nowrap;
+    @media only screen and (max-width: 768px) {
+      flex-wrap:wrap;
+      flex-direction: column;
+    }
+}
+.title {
+    h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+.footer{
+    justify-content: flex-end !important;
+}

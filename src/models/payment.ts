@@ -1,0 +1,8 @@
+export enum PAYMENT_HOTEL_SECTION {
+    HOME_PAY= "HOME_PAY",
+    BOOKING = "BOOKING",
+    REVIEW = "REVIEW",
+    PAYMENT = "PAYMENT",
+  }
+  
+  

@@ -1,0 +1,10 @@
+.pageHeader {
+    min-height: 37vh;
+}
+
+.titleHome {
+    margin-top: 50px;
+    @media only screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+}

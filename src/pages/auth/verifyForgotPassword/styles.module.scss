@@ -1,0 +1,48 @@
+.headerWrapper {
+    background-image: url("../../../assets/img/bg-01.jpg");
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding-top: 80px;
+    .card {
+        border-radius: 16px;
+    }
+}
+
+.headerContainer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+   p {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight:700;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+   }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,212 @@
+
+.title {
+    h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+    }
+    @media only screen and (max-width: 768px) {
+        h3 {
+            margin-bottom: 8px;
+        } 
+    }
+  }
+  .rowHeaderBox {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px; 
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: inherit !important;
+        .boxInputSearch {
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+  }
+  
+  .titleInput {
+    color: rgba(28, 28, 28, 0.9);
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    padding-bottom: 5px;
+    margin: 0 !important;
+  }
+  .containerUploadImg {
+    display: flex;
+    justify-content: center;
+    max-height: 326px;    
+    .boxUpload {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      background: rgba(28, 28, 28, 0.05);
+      border-radius: 5px;
+      max-height: 326px;
+      max-width: 326px;
+      border: 1px dashed;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      @media only screen and (max-width: 767px) {
+        padding: 15px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        h4 {
+          margin: 0;  
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .selectImgTitle {
+    text-decoration: underline;
+    margin-top:24px;
+    text-align: center;
+    @media only screen and (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+  .imgPreview {
+    position: relative;
+    .iconDelete {
+      width: 20px;
+      height: 20px;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #ccc;
+      position: absolute;
+      top: 30px;
+      right: 24px;
+      color: var(--danger-color);
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .iconDelete:hover {
+      background-color: var(--danger-color);
+      color: #cccc;
+    }
+  }
+  .imgAddPhoto {
+    width: 100px;
+    height:  100px;
+    color: var(--gray-40);
+    @media only screen and (max-width: 767px) {
+      width: 62px;
+      height:  60px;
+    }
+  }
+  .noImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-weight: 600;
+      color: var(--gray-40);
+      font-style: italic;
+    }
+  
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0!important;
+    margin: 24px 0;
+    .btnSave {
+      svg {
+        font-size:24px;
+      }
+    }
+  }
+  
+  .editor {
+    width: 100%;
+    > * {
+      font-family: 'Montserrat' !important;
+    }
+    [class~="ql-toolbar"] {
+      border-radius: 5px 5px 0px 0px;
+      [class~="ql-formats"] {
+        [class~="ql-size"] {
+          [class~="ql-picker-item"] {
+            &::before {
+              font-size: 14px;
+            }
+            &[data-value=small] {
+              &::before {
+                font-size: 12px !important;
+              }
+            }
+            &[data-value=large] {
+              &::before {
+                font-size: 16px !important;
+              }
+            }
+            &[data-value=huge] {
+              &::before {
+                font-size: 18px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    [class~="ql-container"] {
+      border-radius: 0px 0px 5px 5px;
+    }
+    [class~="ql-editor"] {
+      min-height: 150px;
+      > * {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+        color: #1c1c1c;
+      }
+      
+      [class~="ql-size-small"] {
+        font-size: 12px;
+        line-height: unset;
+      }
+      [class~="ql-size-large"] {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      [class~="ql-size-huge"] {
+        font-size: 18px;
+        line-height: unset;
+      }
+      ul, ol {
+        padding: 0;
+      }
+      ul {
+        li::before {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .editorError {
+    [class~="ql-toolbar"] {
+      border-color: var(--cimigo-danger) !important;
+    }
+    [class~="ql-container"] {
+      border-color: var(--cimigo-danger) !important;
+    }
+  }
+  

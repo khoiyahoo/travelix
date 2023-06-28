@@ -1,0 +1,45 @@
+.modal {
+    p{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.title {
+    h5 {
+        font-weight: 700!important;
+        color: var(--text-color);
+    }
+    text-transform: uppercase;
+}
+
+.boxNote {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    svg {
+        margin-right: 8px;
+        color: var(--primary-light-color);
+    }
+
+}
+.boxContentNote {
+    li {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+.boxPrice {
+    p {
+        color: var(--gray-40);
+        font-weight: 600;
+    }
+    span {
+        color: var(--text-color);
+    }
+}
+.footer {
+    display: flex;
+    justify-content: flex-end !important;
+}

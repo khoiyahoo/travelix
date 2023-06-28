@@ -1,0 +1,62 @@
+.root {
+    padding: 0;
+    @media only screen and (max-width: 500px) {
+        padding: 0 16px;
+    }
+    h5 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .locationDetail {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .map {
+        height: 275px;
+    }
+}
+.boxNearPlaces {
+    display: flex;
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .itemNearPlace {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+            color: var(--primary-color);
+            margin-right: 8px;
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+    .leftNearPlace {
+        padding-right: 14px;
+        border-right: 1px solid var(--gray-40);
+    }
+}
+
+.contactBox {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-weight:600;
+    margin-top: 14px;
+    p {
+        margin: 0;
+        margin-left:  8px;
+    }
+    svg {
+        font-size: 18px;
+        color: var(--orange-color);
+    }
+    a {
+        color: var(--primary-color) !important;
+        margin-left:  8px;
+    }
+}

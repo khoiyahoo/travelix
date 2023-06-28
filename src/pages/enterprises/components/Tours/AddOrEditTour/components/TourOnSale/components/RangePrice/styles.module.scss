@@ -1,0 +1,60 @@
+.root {
+    padding-bottom: 24px;
+    p {
+        margin: 0;
+    }
+    .title {
+        margin-bottom: 0;
+    }
+}
+
+
+.boxDateTitle {
+    padding: 8px;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white-color);
+    max-width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
+
+.boxTitleItem {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    .titleItem {
+        padding: 8px 16px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-radius: 10px;
+
+        p {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.btnClickAddMileStone {
+    cursor: pointer;
+    margin-left: 24px;
+}
+.boxAddDay {
+    margin-top: 24px;
+    display: flex;
+}
+.boxNextBtn {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-end;
+    svg {
+        font-size: 24px;
+    }
+}

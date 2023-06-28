@@ -1,0 +1,139 @@
+
+.cardItem {
+    padding-bottom: 16px;
+    min-height: 0px;
+    
+    a {
+        text-decoration: none;
+    }
+    p {
+        color: #ffff;
+        margin: 0;
+    }
+    .boxImg {
+        img {
+            height: 155px;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+    .boxLocation {
+        display: flex;
+        svg {
+            margin-right: 8px;
+            color: #5E5B5B;
+        }
+        div {
+            p {
+                margin: 0;
+                color: #5E5B5B;
+                font-weight: 500;
+                font-size: 12px;
+                text-overflow: ellipsis !important;
+                max-width: 100%;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                text-overflow: ellipsis !important;
+                white-space: nowrap;
+                word-wrap: break-word;
+            }
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+    .boxTitle {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        -webkit-line-clamp: 3;
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-color);
+            margin: 0;
+            text-overflow: ellipsis !important;
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-overflow: ellipsis !important;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+    }
+    .boxCityStart {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            color: #5E5B5B;
+            margin: 0;
+        }
+        span {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+    }
+    .boxReview {
+        padding-top: 20px;
+        min-height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: var(--primary-light-color);
+        font-weight: 600;
+        flex: 1;
+        svg {
+            margin-right: 4px;
+        }
+        .numberOfReviews {
+            color: var(--text-color);
+        }
+    }
+    .boxPrice {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #C4C3C3;
+        } 
+        p {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--orange-color);
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-overflow: ellipsis !important;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+    }
+    .boxViewMore {
+        padding-top: 16px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+        flex: 1;
+        p {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;    
+            color: var(--orange-color);
+        }
+        svg {
+            color: var(--orange-color);
+            margin-left: 4px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+    }
+}

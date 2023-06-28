@@ -1,0 +1,289 @@
+.containerBody {
+    background-color: var(--background-container-color);
+    padding-bottom: 32px;
+    position: relative;
+}
+.imgHeader {
+    min-height: 55vh;
+}
+
+.titleBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    > div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .divider {
+        width: 80%;
+        height: 3px;
+        background-color: #cccc;
+    }
+    p {
+        padding: 32px;
+    }
+}
+.containerSearch {
+    margin: 0;
+    position: sticky;
+    min-width: 0;
+    min-height: 0;
+    top: 60px;
+    z-index: 10;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 500px) {
+        padding: 0 14px;
+      }
+    @media only screen and (max-width: 768px) {
+        top: 50px;
+    }
+}
+.boxControlSearch {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    align-items: center;
+    border-radius: 8px;
+    @media only screen and (max-width: 500px) {
+        display: block;
+        padding: 12px;
+        width: 100%;
+      }
+    .boxTitleSearch {
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+            span {
+                color: var(--orange-color);
+            }
+            @media only screen and (max-width: 500px) {
+                display: none;
+              }
+        }
+    }
+    .inputSearch {
+        margin-bottom: 0 !important;
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+          }
+    }
+}
+.searchControlWrapper {
+    display: flex;
+    .inputSearchDate {
+        margin-left: 14px;
+    }
+}
+.boxResult {
+    display: flex;
+    background-color: var(--background-container-color);
+    padding: 12px 24px;
+    justify-content: space-between;
+    .boxControlLayout {
+        display: flex;
+        padding: 0;
+        @media only screen and (max-width: 768px) {
+            display: none;
+          }
+    }
+    @media only screen and (max-width: 768px) {
+        flex-direction: column; 
+        padding: 12px 24px;
+      }
+}
+.layoutBtn {
+    font-weight: 700;
+    padding: 10px 16px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 4px;
+    svg {
+        color: #ffff;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+.rowResult {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    h5 {
+        font-weight: 700;
+        color: var(--primary-color);
+        margin:0;
+        font-size: 14px;
+        span {
+            margin-left: 8px;
+            color: var(--orange-color);
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+    }
+    .controlSelect {
+        display: flex;
+        align-items: center;
+        padding-right: 12px !important;
+
+        @media only screen and (max-width: 768px) {
+            max-width: 100%;
+            padding: 14px 0;
+          }
+    }
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 12px 0 12px 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+}
+.inputSelect {
+    font-size: 16px;
+    width: 100% !important;
+}
+.dropDownResult {
+    margin-right: 8px;
+    .viewResult {
+        background-color: #ffff !important;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color) !important;
+        margin: 0;
+        border-radius: 15px;
+        padding: 5px 15px;
+        span {
+            margin-right: 4px;
+            font-size: 1.3em;
+            font-weight:700;
+        }
+    }
+}
+
+.rowResultBody {
+    padding: 14px 9px 14px 24px;
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 32px;
+    .btnResetWrapper {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 768px) {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    .btnResetWrapper {
+        @media only screen and (max-width: 768px) {
+            max-width: 100%;
+            margin: 24px 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            button {
+                width: 100%;
+            }
+          }
+    }
+}
+.listTours {
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+}
+.containerListTour {
+    min-height: 1248px;
+}
+.rowGridView {
+    @media only screen and (max-width: 768px) {
+        display: block;
+      }
+}
+.resultDesktop {
+    margin: 0;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+}
+
+.btnLayoutWrapper {
+    padding:0 32px 16px 32px;
+    button:first-child {
+        margin-bottom: 16px !important;
+    }
+}
+
+.colBtnLayout {
+    padding: 0;
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 32px !important;
+      }
+}
+
+.btnResetOption {
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 15px 24px !important;
+
+    svg {
+        font-size: 16px;
+        margin-right: 4px;
+    }
+}
+// .inputSearch {
+//     margin-top: 16px;
+//     span {
+//         padding: 6px !important;
+//     }
+//     input {
+//         padding: 6px 0 !important;
+//         font-size: 14px !important;
+//     }
+// }
+.btnSearch {
+    width: 100%;
+}
+.pigination {
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+      }
+}
+
+.selectPerPage {
+    background-color: #ffff;
+    color: var(--primary-color);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    .option {
+        padding: 8px 10px !important;
+    }
+}
+
+.stopWorking {
+    display: none;
+}

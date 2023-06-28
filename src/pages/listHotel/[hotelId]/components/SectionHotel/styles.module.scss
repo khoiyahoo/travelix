@@ -1,0 +1,217 @@
+.root {
+    background: #f6f2f2;
+    position: relative;
+    padding-bottom: 32px;
+    .container {
+        background: #ffff;
+        border-radius: 12px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        box-shadow: 0px 1px 2px rgb(3 18 26 / 20%);
+    }
+    h5 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    @media only screen and (max-width: 500px) {
+        padding: 16px;
+    }
+}
+.text {
+
+        font-size: 16px;
+        margin: 0;
+
+}
+.rootImg {
+    padding: 0 24px !important;
+}
+.containerImg {
+    .wrapperImg {
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        .rowImg {
+            height: 50%;
+            @media only screen and (max-width: 600px) {
+                height: 100%;
+             }
+        }
+        .rowImg:first-child {
+            padding-bottom: 12px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .wrapperImg1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0 !important;
+    }
+    .moreImg {
+        position: relative;
+
+    }
+    .modalImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(3,18,26,1.00);
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        p{
+            font-size: 18px;
+            color: var(--white-color);
+            font-weight: 700;
+
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .mobileImg {
+            display: none;
+        }
+     }
+
+}
+
+.nameHotel {
+    color: var(--primary-color) !important;
+    margin-bottom: 0;
+}   
+.subProduct {
+    display: flex;
+    margin-top: 16px;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 12px;
+     }
+.tags {
+    margin-bottom: 12px;
+
+    display: flex;
+    @media only screen and (max-width: 600px) {
+        margin-top: 12px;
+        margin-bottom: 0;
+     }
+    .badgeTags {
+        color: var(--white-color) !important;
+        margin-left: 8px;
+        background-color: var(--primary-light-color) !important;
+    }
+    .badgeTags:first-child {
+        margin-left: 0;
+    }
+
+}
+
+.locationRate {
+        display: flex;
+        margin-left: 16px;
+        color: var(--orange-color);
+        @media only screen and (max-width: 600px) {
+            margin-left: 0;
+         }
+        .starRating {
+            margin-left: 16px;
+        }
+        p {
+            margin-bottom: 0;
+            margin-left: 4px;
+            font-size: 16px;
+            font-weight: 600;        
+        }
+        svg {
+            font-size: 20px;
+        }
+}
+}
+.boxLocation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    svg {
+        color: var(--primary-light-color);
+        margin-right: 8px;
+    }
+    p {
+        margin: 0;
+        color: var(--primary-light-color);
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.boxReview {
+    .review {
+        display: flex;
+        align-items: center;
+        svg {
+            color: var(--primary-light-color);
+            margin-right: 8px;
+        }
+        p {
+            margin: 0;
+            font-size:14px;
+            font-weight: 500;
+        }
+    }
+
+}
+.boxPrice {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    h5 {
+        color: var(--orange-color);
+    }
+
+}
+.boxFacilities {
+    padding: 24px;
+    .itemFacilities {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            color: var(--primary-light-color);
+            margin-right: 8px;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        @media only screen and (max-width: 768px) {
+            justify-content: flex-start;
+          }
+    }
+    .boxSeeMore {
+        padding-top: 24px;
+        text-align: center;
+        p{
+            color: var(--primary-light-color);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        p:hover {
+            color: var(--primary-color);
+        }
+    }
+}   

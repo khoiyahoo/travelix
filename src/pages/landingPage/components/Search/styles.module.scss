@@ -1,0 +1,67 @@
+.root{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1110px;  
+    // margin-top: -44px;
+    @media only screen and (max-width: 768px) {
+        max-width: 350px;  
+        margin-top: 0;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.boxSearch {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    .boxTabControl {
+        border-right: 1px solid var(--gray-6);
+        display: flex;
+        justify-content: center;
+        .navItem {
+            cursor: pointer;
+            color: var(--white-color);
+            svg {
+                color: var(--white-color);
+                margin-right: 4px;
+            }
+            div:first-child {
+                font-size: 14px;
+                font-weight: 700;
+                padding: 16px 24px;
+                @media only screen and (max-width: 768px) {
+                    border-top-left-radius: 0;
+                }
+            }
+        }
+        .active {
+            border-bottom: 5px solid var(--white-color);
+            @media only screen and (max-width: 768px) {
+                border-right: none;
+                border-bottom: 5px solid var(--white-color);
+            }
+        }
+    }
+    .boxTabContent {
+        padding: 24px;
+        padding-top: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        .boxTabControl {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 14px;
+        }
+        .boxTabContent {
+            padding: 14px;
+            width: 100%;
+        }
+    }
+}

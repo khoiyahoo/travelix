@@ -1,0 +1,88 @@
+.container {
+    background-color: #ffff;
+    padding-bottom: 50px;
+    padding-top: 1px;
+}
+
+.boxStopWorking {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    svg {
+        width: 300px;
+        height: 300px;
+        color: var(--gray-40);
+    }
+    h3 {
+        color: var(--gray-40);
+    }
+}
+
+.navbar {
+    background-color: var(--white-color); 
+    position: fixed;
+    top: 0px; 
+    width: 100%; 
+    z-index: 1;
+    transition: top 0.3s; 
+    box-shadow: var(--box-shadow-100);
+  }
+  
+  /* Style the navbar links */
+  .navItem a{
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 18px 0 12px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+  }
+
+.containerNav {
+    padding: 0;
+    .rootTabs {
+        display: flex;
+        justify-content: space-between;
+        [class~="MuiTabs-flexContainer"] {
+            justify-content: space-between;
+        }
+        [class~="MuiTabs-indicator"] {
+            display: none;
+        }
+    }
+    .listNav {
+        display: flex;
+        justify-content: space-between;
+        min-width: 500px;
+        @media only screen and (max-width: 500px) {
+            padding: 0 16px;
+         }
+    }
+    .backToTop {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        svg {
+            margin-left: 4px;
+        }
+        a {
+            border-bottom: 5px solid transparent;
+
+        }
+        @media only screen and (max-width: 600px) {
+           display: none;
+        }
+    }
+}
